@@ -10,6 +10,7 @@ class Store extends Model
     use HasFactory;
 
     protected $table = 'members';
+    public $timestamps = false;
     protected $fillable = ['name', 'phone', 'email'];
 
 }

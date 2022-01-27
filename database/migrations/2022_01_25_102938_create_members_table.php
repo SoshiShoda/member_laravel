@@ -19,7 +19,6 @@ class CreateMembersTable extends Migration
             $table->string('phone');
             $table->string('email');
             $table->timestamps();
-            $table->timestamps();
         });
     }
 
