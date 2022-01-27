@@ -35,7 +35,7 @@ class MemberController extends Controller
      */
     public function index(Request $request)
     {
-        $members = Member::get('id', 'asc');
+        $members = Member::orderBy('id', 'asc')->get();
         return view('members.index', [
             'members' => $members,
             // 'members' => $this->members->forMember($request->user()),
